@@ -1,8 +1,10 @@
 #! /usr/bin/env bash
 set -e -o pipefail
 
-scriptTokBin=/full/path/to/hotspot-distr/ScriptTokenizer/src/script-tokenizer.py
-pipeDir=/full/path/to/hotspot-distr/pipeline-scripts
+hotspotDir=/lustre/scratch/users/$USER/software/hotspot/hotspot-distr
+
+scriptTokBin=$hotspotDir/ScriptTokenizer/src/script-tokenizer.py
+pipeDir=$hotspotDir/pipeline-scripts
 tokenFile=runall.tokens.txt
 
 ## Download test data if necessary
